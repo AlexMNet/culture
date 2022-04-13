@@ -2,10 +2,13 @@ import "dotenv/config";
 import express from "express";
 import connectDB from "./db/connect.js";
 const app = express();
+import imageRouter from "./routes/imageRoutes.js";
 
-app.get("/images", (req, res) => {
+app.get("/", (req, res) => {
   res.send("images rendering...");
 });
+
+app.use("/api/v1/images", imageRouter);
 
 let port = process.env.PORT || 5000;
 
@@ -19,3 +22,5 @@ const start = async () => {
     console.log(err);
   }
 };
+
+start();

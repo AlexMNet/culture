@@ -1,14 +1,12 @@
+import "dotenv/config";
 import mongoose from "mongoose";
 import Image from "./models/ImageModel.js";
 
 mongoose
-  .connect(
-    "mongodb+srv://admin-alex:test123@hotsaucecluster.aupxg.mongodb.net/culture?retryWrites=true&w=majority",
-    {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    }
-  )
+  .connect(process.env.MONGO_URL, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
   .then(() => {
     console.log("Mongo Connection open!");
   })

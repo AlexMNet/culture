@@ -39,7 +39,6 @@ const updateImage = async (req, res) => {
     const image = await Image.findByIdAndUpdate(req.params.id, req.body, {
       new: true,
     });
-    console.log(image);
     res.status(200).json({
       status: "success",
       image,

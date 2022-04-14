@@ -2,8 +2,9 @@ const Images = ({ images, setClassification }) => {
   return (
     <>
       {images.map((image) => (
-        <div key={image._id} className='d-flex flex-column mb-5 mx-auto'>
-          <img src={image.url} alt='bio reactor' height='500px' />
+        <div key={image._id} className='d-flex flex-column w-75 mb-5 mx-auto'>
+          <img src={image.url} alt='bio reactor' className='img-fluid' />
+
           <small className='text-center'>Status: {image.classification}</small>
           <small className='text-center'>Image Id: {image._id}</small>
           <div className='d-grid gap-2 mx-auto'>

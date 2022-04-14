@@ -11,7 +11,7 @@ Live app: https://culture-bio-app.herokuapp.com/
 
 ### Seeding DB
 
-The database should be seeded to begin with. The application is using a cloud database. If you want to reseed and start from scratch you can run the following command in the root dir.
+The database should already be pre-seeded to begin with. The application is using a cloud database. If you want to reseed and start from scratch you can run the following command in the root dir.
 
 - node seed.js
 

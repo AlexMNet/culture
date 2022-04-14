@@ -21,5 +21,14 @@ This will wipe the current DB and replace everything with the data from the JSON
 
 - Pagination features in backend (imageController.js) as well as frontend.
 - Ability to classify an image as foaming or not-foaming. This is saved to the DB
-- Filter images based on classifiction enum: ["unclassified", "foaming", "not-foaming"]
+- Filter images based on classification enum: ["unclassified", "foaming", "not-foaming"]
 - Cloud Database using MongoAtlas
+
+### Tech
+
+- Bootstrap
+- React.JS
+- Express.JS
+- Mongo DB
+
+[Example Video](https://www.youtube.com/watch?v=CGkl7ZxaBhs)

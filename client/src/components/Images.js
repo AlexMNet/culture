@@ -5,11 +5,15 @@ const Images = ({ images, setClassification }) => {
         <div key={image._id} className='d-flex flex-column w-75 mb-5 mx-auto'>
           <img src={image.url} alt='bio reactor' className='img-fluid' />
 
-          <small className='text-center'>Status: {image.classification}</small>
+          <h6 className='text-center'>
+            <span className='badge badge-info'>
+              Status: {image.classification}
+            </span>
+          </h6>
           <small className='text-center'>Image Id: {image._id}</small>
-          <div className='d-grid gap-2 mx-auto'>
+          <div className='d-grid gap-2 mx-auto mt-2'>
             <button
-              className='btn btn-warning'
+              className='btn btn-warning mr-3'
               type='button'
               value='foaming'
               onClick={(e) => setClassification(e, image._id)}
